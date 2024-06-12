@@ -1,5 +1,15 @@
+function toggleFullScreen() {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen();
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+}
 
-const phrases = ["PHP Developer ", "Laravel Developer "];
+
+const phrases = ["PHP Developer ", "Laravel Developer"];
 let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -7,6 +17,7 @@ const typingSpeed = 200; // typing speed in milliseconds
 const eraseSpeed = 50; // erase speed in milliseconds
 const delayBeforeErase = 2000; // delay before starting to erase in milliseconds
 
+//type animation
 function type() {
     const currentPhrase = phrases[phraseIndex];
     const delay = isDeleting ? eraseSpeed : typingSpeed;
@@ -82,3 +93,4 @@ document.getElementById("submitBtn").addEventListener("click", function() {
   };
   xhr.send(JSON.stringify({ email: email, message: message }));
 });
+

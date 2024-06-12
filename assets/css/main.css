@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Protest+Strike&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+body {
+
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: .9;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+#navbarResponsive{
+  padding: 0;
+}
+#bg{
+  /* background-image: url('../images/bg.jpg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  
+
+}
+.heading-margin {
+    margin-top: 70px; /* Adjust this value as needed */
+  }
+  #cursor {
+  display: none; /* Initially hide the cursor */
+  }
+  #typing-animation {
+
+  font-family: monospace;
+  font-size: 34px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .15em solid orange;
+  animation: typing 1s steps(40, end), blink-caret .75s step-end infinite;
+  }
+
+  @keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 15ch; /* adjust width as needed */
+  }
+  }
+
+  @keyframes blink-caret {
+  from,
+  to {
+      border-color: transparent;
+  }
+  50% {
+      border-color: orange;
+  }
+  }
+
+  @keyframes blink-animation {
+0% {
+  opacity: 0;
+}
+50% {
+  opacity: 1;
+}
+100% {
+  opacity: 0;
+}
+
+}
+
+#portfolio{
+  margin-top: 50px;
+}
+
+.logo{
+  height: 40%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.logo img:hover{
+    width: 110px;
+    height: 110px;
+    /* margin: 20px; */
+    transition: all 0.2s;
+    filter: brightness(1) grayscale(0) opacity(0.85);
+  cursor: pointer;
+}
+
+.logo img{
+    width:100px;
+    height: 100px;
+    filter: brightness(1.1) grayscale(1) opacity(0.25);
+}
+
+.protest-strike-regular {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#container{
+  width: 140%;
+  /* height: 1vh; */
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+#typing{
+  color: #080101;
+  font-size: 50px;
+}
+span{
+  color: rgb(3, 97, 34);
+  font-size: 65px;
+  
+}
+
+.image-container {
+  padding: 40px;
+  padding-bottom: 2%;
+  margin-top: 10px;
+  width: 36%; /* Adjust according to your image size */
+  height: 30%; /* Adjust according to your image size */
+  /* border-radius: 50%; Creates a circular shape */
+  overflow: hidden; /* Ensures the image stays within the circle */
+  margin-right: 11px; /* Adjust spacing between image and text */
+
+}
+
+.image-container img {
+  width: 150%; /* Make the image fill the circular container */
+  height: auto;
+  padding-right: 100px; /* Maintain aspect ratio */
+}
+
+#header {
+  display:flex;
+  align-items: center;
+}
+.dosis-font{
+  text-indent: 30px;
+  color: rgb(56, 56, 56);
+  font-size: 20px;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 550;
+  font-style: normal;
+}
+
+.protest-strike-regular {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul li a{
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+}
+
+#about{
+  margin-top: 10%;
+  padding-top: 70px;
+}
